@@ -271,8 +271,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (result.isSuccess()) {
             // Signed in successfully, show authenticated UI.
             GoogleSignInAccount acct = result.getSignInAccount();
-            nameGoogle.setText("Name: " + acct.getDisplayName() +
-                               "Email: " + acct.getEmail()
+            nameGoogle.setText("Name: " + acct.getDisplayName() + "\n" +
+                               "Email: " + acct.getEmail() + "\n" 
                                 + "Id: " + acct.getId());
 
             //load photo
