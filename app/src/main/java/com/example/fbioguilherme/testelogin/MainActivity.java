@@ -37,8 +37,9 @@ public class MainActivity extends AppCompatActivity {
     private TextView infoUser;
     private String gender;
     private String id;
-    private String loca;
+    private String local;
     private String name;
+    private String birth;
 
 
     @Override
@@ -83,16 +84,16 @@ public class MainActivity extends AppCompatActivity {
 
                                 // Application code
                                 try {
-                                    String gender = object.getString("gender");
-                                    String id = object.getString("id");
-                                    String locale = object.getString("locale");
-                                    String name = object.getString("name");
-                                    String birth = object.getString("birthday");
+                                    gender = object.getString("gender");
+                                    id = object.getString("id");
+                                    local = object.getString("locale");
+                                    name = object.getString("name");
+                                    birth = object.getString("birthday");
 
                                     //set info
                                     infoUser.setText("Name: " + name + "\n"
                                     + "Genero: " + gender + "\n"
-                                    + "Local: " + locale + "\n"
+                                    + "Local: " + local + "\n"
                                     + "Id: " + id + "\n"
                                     + "Data de nascimento: " + birth);
 
