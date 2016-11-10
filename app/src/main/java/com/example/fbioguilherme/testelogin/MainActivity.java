@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
     private String local;
     private String name;
     private String birth;
+    private String email;
 
 
     @Override
